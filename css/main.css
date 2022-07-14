@@ -38,34 +38,7 @@ body {
   list-style: none;
 }
 
-.section-divider .custom-shape-divider-bottom-1657434820 {
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-.section-divider .custom-shape-divider-bottom-1657434820 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 147px;
-  transform: rotateY(180deg);
-}
-.section-divider .custom-shape-divider-bottom-1657434820 .shape-fill {
-  fill: #ed282f;
-}
-.section-divider .custom-shape-divider-bottom-1657434820 .shape-fill-2 {
-  fill: #eee;
-}
-.section-divider .bottom-svg {
-  background-color: var(--red);
-}
-.section-divider .appcode-info {
-  height: 200px;
-  background-color: var(--red);
-}
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   header .navbar {
     margin: 1em;
   }
@@ -95,9 +68,104 @@ body {
   .appcode-div .div-title span {
     color: var(--red);
   }
-  .appcode-div .section-divider .custom-shape-divider-bottom-1657434820 svg {
-    width: calc(100% + 1.3px);
-    height: 54px;
+  .section-divider {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    padding-top: 80px;
+  }
+  .section-divider .div-style {
+    top: 50%;
+    border: none;
+  }
+  .section-divider .div-style .waves-top {
+    border: none;
+    background-image: url(/img/waves-top.svg);
+    background-color: var(--red);
+    height: 50px;
+  }
+  .section-divider .div-style .red-divider {
+    background-color: var(--red);
+    border: none;
+    height: 150px;
+  }
+  .section-divider .div-style .waves-bot {
+    height: 50px;
+    border: none;
+    background-image: url(/img/waves-bot.svg);
+  }
+  .section-divider .svg-img {
+    top: 2em;
+    position: absolute;
+  }
+  .section-divider .svg-img img {
+    width: 300px;
+    height: 225px;
+  }
+  .section-divider .div-content-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 7em;
+    color: white;
+  }
+  .section-divider .div-content-first i {
+    color: #233142;
+    padding-bottom: 0.7em;
+  }
+  .section-divider .div-content-first .div-background i {
+    color: var(--blue-dark);
+    height: 20px;
+  }
+  .section-divider .div-rocket {
+    position: absolute;
+    top: 110px;
+    left: 370px;
+  }
+  .section-divider .div-code {
+    position: absolute;
+    top: 150px;
+    left: 580px;
+  }
+  .section-divider .div-people {
+    display: none;
+  }
+  .eligenos {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+  }
+  .eligenos .div-background {
+    position: absolute;
+    opacity: 0.1;
+    left: 100px;
+    z-index: -1;
+  }
+  .eligenos .razon {
+    display: flex;
+    justify-content: space-around;
+  }
+  .eligenos .razon .image {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #eee;
+    border-width: 5px;
+  }
+  .eligenos .razon .image img {
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+  }
+  .eligenos .razon .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .eligenos .razon .text h2 {
+    color: var(--red);
+    font-size: 2em;
   }
   .cards {
     display: flex;
