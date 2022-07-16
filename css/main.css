@@ -43,23 +43,6 @@ body {
   list-style: none;
 }
 
-@media only screen and (max-width: 541px) {
-  .section-divider .div-style .red-divider {
-    height: 0em;
-  }
-  .section-divider .div-rocket {
-    display: none;
-  }
-  .section-divider .div-rocket .rocket-icon {
-    display: none;
-  }
-  .section-divider .div-rocket .contenido {
-    display: none;
-  }
-  .section-divider .svg-img img {
-    max-width: 70%;
-  }
-}
 @media only screen and (max-width: 768px) {
   body {
     max-width: 100%;
@@ -78,16 +61,26 @@ body {
     display: none;
   }
   .appcode-div {
-    background-image: url(/img/Please.svg);
-    background-repeat: no-repeat;
-    margin-left: 3em;
-    height: 31em;
+    height: 29em;
+    padding-left: 1em;
+    position: relative;
+    padding: auto;
+  }
+  .appcode-div .div-background {
+    opacity: 0.7;
+    position: absolute;
+    right: 5em;
+  }
+  .appcode-div .div-background img {
+    max-width: 100%;
+    height: auto;
   }
   .appcode-div .div-title {
     font-family: "Lato", sans-serif;
     font-size: 2em;
     color: var(--gray);
     padding-top: 6em;
+    padding-left: 3em;
   }
   .appcode-div .div-title span {
     color: var(--red);
@@ -169,7 +162,6 @@ body {
   .eligenos .razon {
     display: flex;
     justify-content: space-around;
-    background-color: #aaa;
   }
   .eligenos .razon .image {
     border-style: solid;
@@ -193,19 +185,26 @@ body {
   }
   .cards {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 95%;
     margin: auto;
+    height: 40em;
+  }
+  .cards .card-center {
+    margin-bottom: 5em !important;
   }
   .cards .card {
     border: solid;
     border-radius: 15px;
     border-width: 1px;
     border-color: #aaa;
-    margin: 2em;
-    width: 60%;
+    margin: 0.5em;
+    width: 100%;
+  }
+  .cards .card .card-title {
+    margin-top: 1em;
+    text-align: center;
   }
   .cards .card .card-img {
     display: flex;
@@ -219,21 +218,91 @@ body {
   .cards .card .card-body {
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
-    padding: 2em;
+    padding: 1em;
     font-family: "Lato", sans-serif;
   }
-  .cards .card .card-body .title {
+  .cards .card .card-body .card-price {
     text-align: center;
+    margin-bottom: 1em;
   }
   .cards .card .card-body .card-text {
-    text-align: justify center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
   }
-  .cards .card .card-body .card-button {
+  .cards .card .card-footer {
     display: flex;
-    padding: 1em;
-    margin: 1em;
+    align-items: center;
     justify-content: center;
+    height: 4em;
     background-color: var(--blue-dark);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .cards .card .card-footer .card-button p {
+    font-size: 1.6em;
+    color: #eee;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .appcode-div {
+    margin-left: 1em;
+    position: relative;
+    height: 20em;
+  }
+  .appcode-div .div-background img {
+    width: 100%;
+    height: auto;
+  }
+  .appcode-div .div-title {
+    position: absolute;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+  }
+  .appcode-div .div-title h1 {
+    font-size: 1.5em;
+  }
+  .section-divider .div-rocket {
+    display: none;
+  }
+  .section-divider .div-rocket .rocket-icon {
+    display: none;
+  }
+  .section-divider .div-rocket .contenido {
+    display: none;
+  }
+  .section-divider .svg-img img {
+    max-width: 70%;
+  }
+  .eligenos .razon {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .eligenos .razon .image {
+    width: 50%;
+  }
+  .eligenos .razon .image img {
+    width: 100%;
+    height: auto;
+  }
+  .eligenos .razon .text {
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 33em;
+  }
+  .cards .card-center {
+    margin-bottom: 0 !important;
   }
 }/*# sourceMappingURL=main.css.map */
