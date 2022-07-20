@@ -13,14 +13,6 @@
   --gray: #7f7f7f;
 }
 
-.box {
-  position: absolute;
-}
-
-.stack-top {
-  z-index: 9;
-}
-
 body {
   background-color: #eee;
   width: 100%;
@@ -40,7 +32,261 @@ body {
 }
 .navbar nav ul {
   display: flex;
+}
+.navbar nav ul li {
   list-style: none;
+  margin: 0.2em;
+}
+.navbar nav ul li p {
+  transition: all 400ms;
+  padding: 1em;
+  border-radius: 10px;
+}
+.navbar nav ul li p:hover {
+  background-color: var(--blue-dark);
+  color: #eee;
+}
+
+.appcode-div {
+  height: 29em;
+  padding-left: 1em;
+  position: relative;
+  padding: auto;
+}
+.appcode-div .div-background {
+  opacity: 0.7;
+  position: absolute;
+  left: 13em;
+  top: 3em;
+  z-index: -1;
+}
+.appcode-div .div-background img {
+  max-width: 100%;
+  height: auto;
+}
+.appcode-div .div-title {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  color: var(--blue-dark);
+  padding-top: 6em;
+  padding-left: 3em;
+}
+.appcode-div .div-title span {
+  color: var(--red);
+}
+
+.section-divider {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  padding-top: 80px;
+}
+.section-divider .div-style {
+  top: 50%;
+  border: none;
+}
+.section-divider .div-style .waves-top {
+  border: none;
+  background-image: url(/img/waves-top.svg);
+  background-color: var(--red);
+  height: 50px;
+}
+.section-divider .div-style .red-divider {
+  background-color: var(--red);
+  border: none;
+  height: 150px;
+}
+.section-divider .div-style .waves-bot {
+  height: 50px;
+  border: none;
+  background-image: url(/img/waves-bot.svg);
+}
+.section-divider .svg-img {
+  top: 2em;
+  position: absolute;
+  left: 5%;
+}
+.section-divider .svg-img img {
+  width: 300px;
+  height: 225px;
+}
+.section-divider .div-content-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 7em;
+  color: white;
+}
+.section-divider .div-content-first i {
+  color: #233142;
+  padding-bottom: 0.7em;
+}
+.section-divider .div-content-first .div-background i {
+  color: var(--blue-dark);
+  height: 20px;
+}
+.section-divider .div-rocket {
+  position: absolute;
+  top: 140px;
+  left: 30%;
+}
+.section-divider .div-code {
+  position: absolute;
+  top: 125px;
+  left: 55%;
+}
+.section-divider .div-people {
+  position: absolute;
+  top: 155px;
+  left: 80%;
+}
+
+.eligenos {
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 2em;
+}
+.eligenos .div-background {
+  position: absolute;
+  opacity: 0.1;
+  left: 100px;
+  z-index: -1;
+}
+.eligenos .row {
+  display: flex;
+  justify-content: space-around;
+}
+.eligenos .razon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2em;
+}
+.eligenos .razon .image img {
+  max-width: 300px;
+}
+.eligenos .razon .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.eligenos .razon .text h2 {
+  color: var(--red);
+  font-size: 2em;
+}
+
+.card-container {
+  position: relative;
+}
+.card-container .div-background {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+}
+.card-container .div-background .bg-img {
+  right: 6em;
+  z-index: -1;
+  width: auto;
+}
+.card-container .div-background .bg-img img {
+  max-width: 100%;
+  height: auto;
+}
+.card-container .div-background .div-lines {
+  height: 20em;
+  width: 100%;
+}
+.card-container .div-background .div-lines div {
+  background-color: red;
+  width: 100%;
+  height: 3em;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-top: 1em;
+}
+.card-container .div-background .div-lines div p {
+  opacity: 0;
+}
+.card-container .div-background .div-lines .line-1 {
+  height: 2em;
+  width: 20%;
+}
+.card-container .div-background .div-lines .line-2 {
+  height: 5em;
+  width: 40%;
+}
+.card-container .div-background .div-lines .line-3 {
+  width: 20%;
+  height: 2em;
+}
+.card-container .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  height: 40em;
+  position: relative;
+  max-width: 80%;
+}
+.card-container .cards .card-center {
+  margin-bottom: 5em !important;
+}
+.card-container .cards .card {
+  border: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  border-color: #aaa;
+  margin: 1.5em;
+  width: 90%;
+  background-color: #eee;
+}
+.card-container .cards .card .card-title {
+  margin-top: 1em;
+  text-align: center;
+}
+.card-container .cards .card .card-img {
+  display: flex;
+  justify-content: center;
+}
+.card-container .cards .card .card-img img {
+  padding: 1em;
+  width: 90%;
+  height: auto;
+}
+.card-container .cards .card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-family: "Lato", sans-serif;
+}
+.card-container .cards .card .card-body .card-price {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.card-container .cards .card .card-body .card-text {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.card-container .cards .card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  background-color: var(--blue-dark);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.card-container .cards .card .card-footer .card-button p {
+  font-size: 1.6em;
+  color: #eee;
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,6 +360,7 @@ body {
   .section-divider .svg-img {
     top: 2em;
     position: absolute;
+    left: 1em;
   }
   .section-divider .svg-img img {
     width: 300px;
@@ -138,12 +385,12 @@ body {
   .section-divider .div-rocket {
     position: absolute;
     top: 110px;
-    right: 40%;
+    left: 46%;
   }
   .section-divider .div-code {
     position: absolute;
     top: 150px;
-    right: 10%;
+    left: 73%;
   }
   .section-divider .div-people {
     display: none;
@@ -158,6 +405,9 @@ body {
     opacity: 0.1;
     left: 100px;
     z-index: -1;
+  }
+  .eligenos .row {
+    display: block;
   }
   .eligenos .razon {
     display: flex;
@@ -183,66 +433,6 @@ body {
     color: var(--red);
     font-size: 2em;
   }
-  .cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 95%;
-    margin: auto;
-    height: 40em;
-  }
-  .cards .card-center {
-    margin-bottom: 5em !important;
-  }
-  .cards .card {
-    border: solid;
-    border-radius: 15px;
-    border-width: 1px;
-    border-color: #aaa;
-    margin: 0.5em;
-    width: 100%;
-  }
-  .cards .card .card-title {
-    margin-top: 1em;
-    text-align: center;
-  }
-  .cards .card .card-img {
-    display: flex;
-    justify-content: center;
-  }
-  .cards .card .card-img img {
-    padding: 1em;
-    width: 90%;
-    height: 90%;
-  }
-  .cards .card .card-body {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    font-family: "Lato", sans-serif;
-  }
-  .cards .card .card-body .card-price {
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .cards .card .card-body .card-text {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-  }
-  .cards .card .card-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4em;
-    background-color: var(--blue-dark);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  .cards .card .card-footer .card-button p {
-    font-size: 1.6em;
-    color: #eee;
-  }
 }
 @media only screen and (max-width: 426px) {
   .appcode-div {
@@ -263,6 +453,9 @@ body {
   .appcode-div .div-title h1 {
     font-size: 1.5em;
   }
+  .section-divider {
+    position: relative;
+  }
   .section-divider .div-rocket {
     display: none;
   }
@@ -272,37 +465,59 @@ body {
   .section-divider .div-rocket .contenido {
     display: none;
   }
+  .section-divider .div-code {
+    position: absolute;
+    left: 70%;
+  }
+  .section-divider .svg-img {
+    position: absolute;
+    left: 0.5em;
+  }
   .section-divider .svg-img img {
     max-width: 70%;
+    left: 0;
   }
-  .eligenos .razon {
+  .eligenos {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+  }
+  .eligenos .row .razon {
     margin-top: 3em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .eligenos .razon .image {
+  .eligenos .row .razon .image {
     width: 50%;
   }
-  .eligenos .razon .image img {
+  .eligenos .row .razon .image img {
     width: 100%;
     height: auto;
   }
-  .eligenos .razon .text {
-    padding: 1em;
-  }
-}
-@media only screen and (max-width: 426px) {
-  .cards {
+  .card-container .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 85%;
     margin: auto;
     margin-top: 33em;
   }
-  .cards .card-center {
+  .card-container .cards .card-center {
+    margin-bottom: 0 !important;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .section-divider {
+    position: relative;
+  }
+  .section-divider .div-code {
+    position: absolute;
+    left: 60%;
+  }
+  .card-container .cards .card-center {
     margin-bottom: 0 !important;
   }
 }/*# sourceMappingURL=main.css.map */
