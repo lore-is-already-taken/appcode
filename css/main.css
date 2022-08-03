@@ -49,19 +49,17 @@ body {
 
 .appcode-section {
   position: relative;
-  display: flex;
-  justify-content: space-around;
 }
 .appcode-section .appcode-div {
   height: 29em;
-  padding-left: 1em;
+  padding-left: 0em;
   position: relative;
   padding: auto;
 }
 .appcode-section .appcode-div .div-background {
   opacity: 0.7;
   position: absolute;
-  left: 13em;
+  left: 10em;
   top: 3em;
   z-index: -1;
 }
@@ -81,10 +79,12 @@ body {
 }
 .appcode-section .devices-svg {
   position: absolute;
+  right: 0em;
+  top: 2em;
 }
 .appcode-section .devices-svg img {
-  width: 3em;
-  height: 3em;
+  width: 30em;
+  height: 30em;
 }
 
 .section-divider {
@@ -318,30 +318,33 @@ body {
   header .navbar nav {
     display: none;
   }
-  .appcode-div {
+  .appcode-section .appcode-div {
     height: 29em;
     padding-left: 1em;
     position: relative;
     padding: auto;
   }
-  .appcode-div .div-background {
+  .appcode-section .appcode-div .div-background {
     opacity: 0.7;
     position: absolute;
     right: 5em;
   }
-  .appcode-div .div-background img {
+  .appcode-section .appcode-div .div-background img {
     max-width: 100%;
     height: auto;
   }
-  .appcode-div .div-title {
+  .appcode-section .appcode-div .div-title {
     font-family: "Lato", sans-serif;
     font-size: 2em;
     color: var(--gray);
     padding-top: 6em;
     padding-left: 3em;
   }
-  .appcode-div .div-title span {
+  .appcode-section .appcode-div .div-title span {
     color: var(--red);
+  }
+  .appcode-section .devices-svg {
+    display: none;
   }
   .section-divider {
     width: 100%;
@@ -445,24 +448,32 @@ body {
     color: var(--red);
     font-size: 2em;
   }
+  .card-container .cards {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 426px) {
-  .appcode-div {
+  .appcode-section .appcode-div {
     margin-left: 1em;
     position: relative;
     height: 20em;
   }
-  .appcode-div .div-background img {
+  .appcode-section .appcode-div .div-background {
+    width: 90%;
+    left: 3em;
+    top: 3em;
+  }
+  .appcode-section .appcode-div .div-background img {
     width: 100%;
     height: auto;
   }
-  .appcode-div .div-title {
+  .appcode-section .appcode-div .div-title {
     position: absolute;
     top: 20%;
     margin: 0;
     padding: 0;
   }
-  .appcode-div .div-title h1 {
+  .appcode-section .appcode-div .div-title h1 {
     font-size: 1.5em;
   }
   .section-divider {
