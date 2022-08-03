@@ -12,12 +12,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&family=Water+Brush&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Codigo de google    -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAENt-p35_Z66kNkhGfOJphJ_NjI7SJAQE",
+        authDomain: "appp-ccode.firebaseapp.com",
+        projectId: "appp-ccode",
+        storageBucket: "appp-ccode.appspot.com",
+        messagingSenderId: "182427071186",
+        appId: "1:182427071186:web:d48d58b95d23af8047b30b",
+        measurementId: "G-MQPYG3GFNL",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <!-- Codigo de google    -->
+
     <title>AppCode</title>
   </head>
   <body>
